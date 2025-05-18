@@ -1,0 +1,8 @@
+  - [sans.org](https://www.sans.org)
+  - [cisa.gov](https://www.cisa.gov)
+  - LimaCharlie documentation
+
+## 📚 Supplemental Reading
+- [Microsoft Blog: LSASS Dumping](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/behind-the-scenes-of-lsass-dump-and-mde-detection/ba-p/3121738)
+- [YARA Documentation](https://yara.readthedocs.io/en/stable/)
+- [LimaCharlie Documentation](https://docs.limacharlie.io)
