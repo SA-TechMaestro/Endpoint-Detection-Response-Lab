@@ -18,6 +18,8 @@ My home lab was used to generate telemetry, simulate attacks, and build detectio
 ### Telemetry and Event Log Analysis
 - Initiated monitoring of telemetry and event logs within **LimaCharlie** to understand system activity.
 - Observed events that had been previously generated using a **C2 server** setup.
+  
+![Timeline Overview](./Images/timeline-overview.png) 
 
 ### Inspecting Hashes with VirusTotal
 - Checked file hashes on VirusTotal.
@@ -34,8 +36,12 @@ My home lab was used to generate telemetry, simulate attacks, and build detectio
 ### Unsigned Network Connections
 - Detected and reviewed unsigned or unusual network connections as potential **indicators of compromise**.
 
+![Unsigned Connection](./Images/unsigned-connection.png)
+
 ### Privilege Check Events
 - Investigated privilege elevation and location creation events for abnormal access attempts.
+
+![Privilege Check](./Images/privilege-check-event.png)
 
 ---
 
@@ -43,6 +49,8 @@ My home lab was used to generate telemetry, simulate attacks, and build detectio
 
 ### Procdump Attack Simulation
 - Simulated **LSASS dumping** using `procdump` via Sliver.
+
+![Procdump LSASS](./Images/procdump-lsass-attack.png)  
 - Studied Microsoft's documentation on the implications and methods of detecting this attack.
 - Generated telemetry during the dump process for later analysis in LimaCharlie.
 
@@ -52,13 +60,19 @@ My home lab was used to generate telemetry, simulate attacks, and build detectio
 - Re-executed `procdump` to validate detection rule functionality.
 - Successfully triggered detection in LimaCharlie under the “Detections” panel.
 
+![LSASS Detection Rule](./Images/detection-lsass-rule.png)  
+
 ### Using Sliver for Remote Command Execution
 - Ran commands from a **Linux VM** targeting the **Windows VM** using Sliver.
 - Used this setup to simulate attacker behavior and verify alerting based on custom detection rules.
 
 ### Blocking Attacks
 - Created and tested a rule to block **volume shadow copy deletion**, a behavior common in ransomware activity.
+
+![Shadow Copy Block](./Images/block-vss-rule.png)  
 - Simulated the attack to confirm the rule effectively blocked the event and generated a response.
+
+![Shadow Copy Block](./Images/block-volume-shadowcopy.png)  
 
 ---
 
