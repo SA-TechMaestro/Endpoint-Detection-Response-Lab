@@ -29,6 +29,8 @@ This project documents a hands-on cybersecurity lab focused on endpoint detectio
 - Analyzed telemetry and event logs using LimaCharlie
 - Detected unsigned network connections and privilege changes
 - Used VirusTotal to inspect custom file hashes
+
+![LSASS Detection Rule Triggered](./Images/detection-lsass-rule.png)  
 - Explored LimaCharlie’s Timeline for filtering and correlation
 
 ### ⚔️ Detection & Response
@@ -37,6 +39,7 @@ This project documents a hands-on cybersecurity lab focused on endpoint detectio
 - Validated alert generation using real-time testing
 - Blocked volume shadow copy deletion to simulate ransomware defense
 
+![LimaCharlie Timeline View](./Images/timeline-overview.png)  
 ---
 
 ## 🧠 Lessons Learned
